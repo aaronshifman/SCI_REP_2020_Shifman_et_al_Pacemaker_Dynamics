@@ -1,0 +1,67 @@
+dv/dt = (I + I_leak + I_Ca + I_Na  + I_K)/c: volt
+db/dt = -(b - b_inf)/tau_b : 1
+dg/dt = -(g - g_inf)/tau_g : 1
+dh/dt = -(h - h_inf)/tau_h : 1
+dm/dt = -(m - m_inf)/tau_m : 1
+dn/dt = -(n - n_inf)/tau_n : 1
+dq/dt = -(q - q_inf)/tau_q : 1
+I_leak = gLeak*(e_leak - v) : amp
+I_Ca =  gCaT*(b**(CaT_ex1//1))*(g**(CaT_ex2//1))*(e_ca - v) : amp
+I_Na = gNa*(m**(Na_ex1//1))*(h**(Na_ex2//1))*(e_na - v) : amp
+I_K = gK*(n**(K_ex1//1))*(q**(K_ex2//1))*(e_k - v) : amp
+tau_b = scaling_tau_b/(exp((theta_tau_b - v)/sigma2_tau_b) + exp(-(theta_tau_b - v)/sigma1_tau_b)) : second
+tau_g = scaling_tau_g/(exp((theta_tau_g - v)/sigma2_tau_g) + exp(-(theta_tau_g - v)/sigma1_tau_g)) : second
+tau_h = scaling_tau_h/(exp((theta_tau_h - v)/sigma2_tau_h) + exp(-(theta_tau_h - v)/sigma1_tau_h)) : second
+tau_m = scaling_tau_m/(exp((theta_tau_m - v)/sigma2_tau_m) + exp(-(theta_tau_m - v)/sigma1_tau_m)) : second
+tau_n = scaling_tau_n/(exp((theta_tau_n - v)/sigma2_tau_n) + exp(-(theta_tau_n - v)/sigma1_tau_n)) : second
+tau_q = scaling_tau_q/(exp((theta_tau_q - v)/sigma2_tau_q) + exp(-(theta_tau_q - v)/sigma1_tau_q)) : second
+b_inf = 1/(exp((theta_b_inf - v)/sigma_b_inf) + 1) : 1
+g_inf = 1/(exp(-(theta_g_inf - v)/sigma_g_inf) + 1) : 1
+h_inf = 1/(exp(-(theta_h_inf - v)/sigma_h_inf) + 1) : 1
+m_inf = 1/(exp((theta_m_inf - v)/sigma_m_inf) + 1) : 1
+n_inf = 1/(exp((theta_n_inf - v)/sigma_n_inf) + 1) : 1
+q_inf = 1/(exp(-(theta_q_inf - v)/sigma_q_inf) + 1) : 1
+gLeak  : siemens (constant)
+e_leak : volt (constant)
+gCaT : siemens (constant)
+e_ca : volt (constant)
+gNa  : siemens (constant)
+e_na : volt
+gK : siemens (constant)
+e_k : volt
+theta_b_inf : volt (constant)
+sigma_b_inf : volt (constant)
+theta_tau_b : volt (constant)
+sigma1_tau_b : volt (constant)
+sigma2_tau_b : volt (constant)
+scaling_tau_b : second (constant)
+theta_g_inf : volt (constant)
+sigma_g_inf : volt (constant)
+theta_tau_g : volt (constant)
+sigma1_tau_g : volt (constant)
+sigma2_tau_g : volt (constant)
+scaling_tau_g : second (constant)
+theta_h_inf : volt (constant)
+sigma_h_inf : volt (constant)
+theta_tau_h : volt (constant)
+sigma1_tau_h : volt (constant)
+sigma2_tau_h : volt (constant)
+scaling_tau_h : second (constant)
+theta_m_inf : volt (constant)
+sigma_m_inf : volt (constant)
+theta_tau_m : volt (constant)
+sigma1_tau_m : volt (constant)
+sigma2_tau_m : volt (constant)
+scaling_tau_m : second (constant)
+theta_n_inf : volt (constant)
+sigma_n_inf : volt (constant)
+theta_tau_n : volt (constant)
+sigma1_tau_n : volt (constant)
+sigma2_tau_n : volt (constant)
+scaling_tau_n : second (constant)
+theta_q_inf : volt (constant)
+sigma_q_inf : volt (constant)
+theta_tau_q : volt (constant)
+sigma1_tau_q : volt (constant)
+sigma2_tau_q : volt (constant)
+scaling_tau_q : second (constant)

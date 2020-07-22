@@ -1,0 +1,3 @@
+*.ode were created by stock_model.create_xpp_model()
+*.dat were manually created by running XPP simulations and performing AUTO bifurcation analysis
+*.pkl files are creating during figure generation

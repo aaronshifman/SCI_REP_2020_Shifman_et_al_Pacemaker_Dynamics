@@ -1,0 +1,9 @@
+nevergrad==0.4.0 # later versions incompatible with brian2modelfitting
+brian2modelfitting~=0.3
+numpy~=1.18.2
+scipy~=1.4.1
+matplotlib~=3.2.1
+Brian2~=2.3.0.1
+pandas~=1.0.3
+-e git@github.com:aaronshifman/figurefirst.git
+pydocstyle

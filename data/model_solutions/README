@@ -1,0 +1,2 @@
+Each recording gets a set of 10 solutions (parameters) {name}_[0-9].pkl
+The best solution is duplicated into best_{name}.pkl
