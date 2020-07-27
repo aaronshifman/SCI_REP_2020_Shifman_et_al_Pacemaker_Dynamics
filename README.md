@@ -38,4 +38,4 @@ python run_fitting.py
 
 ## Creating Supplemental Tables
 
-To create the supplemental tables please compile the LaTeX files `S1 Equations.tex`, `S1 Table.tex`, `S2 Table.tex`, and `S3 Table.tex`
+To create the supplemental tables, equations and figures please compile the LaTeX files `S_Equations.tex`, `S_Tables.tex`, and `S_Figure.tex`.

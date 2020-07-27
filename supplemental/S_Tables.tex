@@ -1,0 +1,60 @@
+\documentclass[fleqn, 10pt]{wlscirep}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{textgreek}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{caption}
+\setcounter{table}{0}
+\makeatletter 
+\renewcommand{\thetable}{S\@arabic\c@table}
+\makeatother
+\allowdisplaybreaks
+\title{Supplementary Tables}
+
+\author[1,2,3*]{Aaron R. Shifman}
+\author[1,2,3]{Yiren Sun}
+\author[1,2,3]{Chloé M. Benoit}
+\author[1,2,3]{John E. Lewis}
+\affil[1]{Department of Biology, University of Ottawa, Ottawa, Ontario, Canada K1N 6N5}
+\affil[2]{Center for Neural Dynamics, University of Ottawa, Ottawa, Ontario, Canada K1N 6N5}
+\affil[3]{uOttawa Brain and Mind Research Institute, Ottawa, Ontario, Canada K1H 8M5}
+\affil[*]{ashifman@uottawa.ca}
+
+\renewcommand\Affilfont{\itshape\small}
+\begin{document}
+\maketitle
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{l|r|r|l}
+		Parameter & Lower Bound & Upper Bound & Unit \\
+		\hline
+		\input{bounds}
+	\end{tabular}
+	\caption{Upper and lower bounds for parameter selection in the GA}
+\end{table}
+	
+	\begin{table}[!ht]
+	
+	\centering
+	\begin{tabular}{l|r|r|r|r|l}
+		Parameter & \textbf{Canonical Fit} & Model ii Fit & Model iii Fit & Model iv Fit & Unit \\
+		\hline
+		\input{param_current}
+	\end{tabular}
+	\caption{Ionic Parameters for model fits. Canonical Model maps to Figure 1A, Model B-D maps to Figure 1B-D}
+\end{table}
+	
+	\begin{table}[!ht]
+	
+	\centering
+	\begin{tabular}{l|r|r|r|r|l}
+		Parameter & \textbf{Canonical Fit} & Model ii Fit & Model iii Fit & Model iv Fit & Unit \\
+		\hline
+		\input{param_gating}
+	\end{tabular}
+	\caption{Gating Parameters for model fits. Canonical Model maps to Figure 1A, Model B-D maps to Figure 1B-D}
+\end{table}
+\end{document}   
