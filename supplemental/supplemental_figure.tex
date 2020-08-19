@@ -6,8 +6,11 @@
 \usepackage{textgreek}
 \usepackage{authblk}
 \usepackage{amsmath}
-\def\theequation{S\arabic{equation}}
-\title{Supplementary Equations}
+\setcounter{figure}{0}
+\makeatletter 
+\renewcommand{\thefigure}{S\@arabic\c@figure}
+\makeatother
+\title{Dynamics of a neuronal pacemaker in the weakly electric fish \emph{Apteronotus}}
 
 \author[1,2,3*]{Aaron R. Shifman}
 \author[1,2,3]{Yiren Sun}
@@ -20,9 +23,9 @@
 
 \renewcommand\Affilfont{\itshape\small}
 \begin{document}
-\maketitle
-\begin{align}
-\input{equations}
-\end{align}
+	\maketitle
+	\begin{figure}[!ht]
+	\includegraphics[scale=1]{../figures/fs1}
+	\caption{Voltage-dependence functions for each model current across all model fits. Thick lines represent canonical model in figure 1C(i) and dashed lines represent models in figure 1C(ii-iv). Gating functions (left) and time constant functions (right) with rows representing functions for sodium, potassium, and calcium descending.}
+	\end{figure}
 \end{document}   
-	
