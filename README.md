@@ -1,8 +1,8 @@
 # Dynamics of a neuronal pacemaker in the weakly electric fish *Apteronotus*
 
-This repository is the codebase for [Dynamics of a neuronal pacemaker in the weakly electric fish *Apteronotus*](https://UNAVAILABLE) By Shifman *et. al.* (Currently in review)
+This repository is the codebase for [Dynamics of a neuronal pacemaker in the weakly electric fish *Apteronotus*](https://www.nature.com/articles/s41598-020-73566-3) By Shifman *et. al.* (sci. rep.)
 
-Please cite this as *UNDER REVIEW: REFERENCE UNAVAILABLE* 
+Please cite this as **Shifman, A.R., Sun, Y., Benoit, C.M. et al. Dynamics of a neuronal pacemaker in the weakly electric fish *Apteronotus*. Sci Rep 10, 16707 (2020)**
 
 ## Model details
 The model can be viewed in its abstract form (parametric) in data/MODEL_PARAMETRIC
